@@ -1,6 +1,8 @@
 function [signal, time_arr] = Bit_Signal(input_word,Fs, bitrate)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+%Bit_Signal: Generates a Low/High signal representing the string of bits given in input_word
+%   input_word: a binary word of arbitrary length
+%   Fs: Sampling frequency, given in Hertz
+%   bitrate: number of bits per second
 samples_per_bit = Fs/bitrate;
 signal_length = length(input_word)*samples_per_bit + 1;
 signal = zeros(1,signal_length);
