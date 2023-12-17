@@ -1,4 +1,4 @@
-function R_per = R_prime(Rho, f, mu_r, diam)
+function [R_per, Rp_low, Rp_high]  = R_prime(Rho, f, mu_r, diam)
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
 sd = Skin_Depth(Rho, f, mu_r);
